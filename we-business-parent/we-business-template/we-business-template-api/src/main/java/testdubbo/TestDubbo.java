@@ -18,4 +18,5 @@ public class TestDubbo {
 
 	@Inject
 	protected Dao nutDao;
+
 }

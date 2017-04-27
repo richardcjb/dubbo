@@ -1,0 +1,48 @@
+/*-------------------审批手机-------------------*/
+/*-----分类-----*/
+*{margin:0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+body{background-color:#ecf0f5;}
+.header{z-index: 1;position: fixed;top: 0;height: 2.8rem;width: 100%; background-color: #3c8dbc;color: #fff;text-align: center;line-height: 2.8rem;font-size: 1rem;}
+.content-body{display: block;width: 96%;height: 9rem;background-color: #fff;margin: 0 auto;margin-top: 3.25rem;border: solid 1px #eaeaea;border-radius: 3px;}
+.content-body ul li{border-bottom: solid 1px #eaeaea;}
+.content-body ul li a{width: 100%;display: block;font-size: .9rem;padding: .88rem 0px;text-decoration: none;color: #696969;}
+.content-body ul li:nth-child(3){border-bottom: 0;}
+.content-body ul li:hover{background-color:rgba(236, 236, 236, 0.48);}
+.content-body ul li span{display: block;float: right; margin-right: 1rem;}
+.content-body ul li span i{font-size: .8rem;font-size: 1.2rem;color: #b5b5b5;}
+.content-body ul li span font{font-size: 0.8rem;position: relative;top: -1px;right: 0.7rem;}
+/*-----end 分类-----*/
+/*-----审批列表-----*/
+.list-ul li{display: inline-block;font-size: .85rem;}
+.list-ul li:nth-child(1){width: 20%; }
+.list-ul li:nth-child(1) i{display: inline;font-size: 1.5rem;position: relative;top: .15rem;left: -0.4rem;}
+.list-ul li:nth-child(2){width: 60%;}
+.list-ul li:nth-child(2) h3{font-size: 1rem;font-weight:500;}
+.list-ul li:nth-child(3){width:17%;}
+.list-ul li a{color:#fff;}
+.content-list{position: relative;top:2.8rem;}
+.content-list a{height: 7.2rem;display: block;border-bottom: solid 1px #ecf0f5;background-color: #fff;}
+.content-a-ul li{width: 100%;clear: both;display: block;height: 1.5rem; font-size: 0.9rem;}
+.content-a-ul li span{position: relative; top:.8rem;}
+.content-a-ul li span:nth-child(1){float: left;color: #696969;left: 0.5rem;}
+.content-a-ul li span:nth-child(2){float: right;color: #a9a9a9;right: 0.5rem;font-size: 0.5rem;}
+.color1{color: red !important;} 
+.color2{color:#6cbf51 !important;} 
+.content-a-ul li:nth-child(2) span:nth-child(1){font-size:.6rem;}
+.content-a-ul li:nth-child(3) span:nth-child(1){font-size:.6rem;}
+/*-----end 审批列表-----*/
+/*-----审批详情-----*/
+ul.content-ul {position: relative;top: 2.9rem;}
+.content-ul li{width: 100%;clear: both;display: block;height:2.6rem;font-size: 0.9rem;border-bottom: solid 1px #ecf0f5;background-color: #fff;}
+.content-ul li span{font-size: .8rem;position: relative;top: 0.8rem;}
+.content-ul li span:nth-child(1){float: left;margin-left: .6rem;color: #696969;}
+.content-ul li span:nth-child(2){float: right;margin-right: .6rem;color: #a9a9a9;}
+footer{z-index: 1;position: fixed;bottom: 0;height: 2.8rem;width: 100%;}
+footer button{width: 50%;height: 100%;color: #fff;font-size: .9rem;}
+footer button:nth-child(1){float: left;border: solid 1px #397ea7;background-color: #3c8dbc;}
+footer button:nth-child(2){float: right;    background-color: #ecf0f5;border: solid 1px #306e92;color: #3c8dbc;}
+/*-----end 审批详情-----*/
+.layui-layer-btn0{border: 1px solid #dedede !important;background-color: #f1f1f1 !important;color: #333 !important;}
+.layui-layer-btn1{border-color: #4898d5 !important;background-color: #2e8ded !important;color: #fff !important;}

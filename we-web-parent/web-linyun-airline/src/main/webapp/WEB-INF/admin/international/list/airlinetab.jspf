@@ -1,0 +1,270 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div class="tab-pane pane-content labelMar" id="tab_2">
+                        
+		<!--系列团/临时团 select and 按钮（导出、保存计划）-->
+		<div class="form-group row">
+		  <label class="col-sm-1 text-right padding marTop5">状态：</label>
+		  <div class="col-md-1 padding">
+		    <select class="form-control select1" id="teamtype" onchange="changeType();">
+		      <option value="1">系列团</option>
+		      <option value="2">临时团</option>
+		    </select>
+		  </div>
+		  <div class="col-md-10">
+		    <button type="button" onclick="makePlan();" class="btn btn-primary btn-sm right">制作</button>
+		   <button type="button" class="btn btn-primary btn-sm right" onclick="savePlan();">保存计划</button>
+		   </p>  
+		   <div class="dropdown dropdoImport">
+		       <button class="btn btn-primary dropdown-toggle btn-sm right" type="button" data-toggle="dropdown">导出excel</button>
+		           <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu1">
+		              <li role="presentation">
+		                 <a class="flie_A flie_import" target="hidden_frame" href="${base}/admin/customneeds/exportDongHangTemplate.html">东航</a>
+		              </li>
+		              <li role="presentation">
+		                 <a class="flie_A flie_import" target="hidden_frame" href="${base}/admin/customneeds/exportNanHangTemplate.html">南航</a>
+		              </li>
+		              <li role="presentation">
+		                 <a class="flie_A flie_import" target="hidden_frame" href="${base}/admin/customneeds/exportXinHangTemplate.html">新航</a>
+		              </li>
+		              <li role="presentation">
+		                 <a class="flie_A flie_import" target="hidden_frame" href="${base}/admin/customneeds/exportGuoTaiTemplate.html">国泰</a>
+		              </li>
+		              <li role="presentation">
+		                 <a class="flie_A flie_import" target="hidden_frame" href="${base}/admin/customneeds/exportLingYunTemplate.html">凌云</a>
+		               </li>
+		            </ul>
+		    </div>
+		  </div>
+		</div><!--end 系列团/临时团 select and 按钮（导出、保存计划）-->
+		
+		<div class="addMake aa">
+		  <a href="javascript:;" name="addButton" class="glyphicon glyphicon-plus addIcon removAddMake"></a><!--添加div按钮-->
+		 <!--旅行社名称/人数/天数/去程航班/回程航班 text-->
+		 <div class="form-group row">
+		   <label class="col-sm-1 text-right padding">旅行社：</label>
+		   <div class="col-sm-1 padding">
+		     <!-- <select id="tranvelname" onclick="loadTranvel();" class="form-control input-sm chzn-select" data-placeholder="旅行社名称" tabindex="7">
+		     </select> -->
+		                      <select id="travelname0" name="travelname" class="form-control select2" multiple="multiple" data-placeholder="旅行社名称">
+		</select>
+		                    </div>
+		                    <label class="col-sm-1 text-right padding">人数：</label>
+		                    <div class="col-sm-1 padding">
+		                      <input type="text" name="peoplecount" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control input-sm" placeholder="">
+		   </div>
+		   <label class="col-sm-1 text-right padding">天数：</label>
+		   <div class="col-sm-1 padding">
+		     <input type="text" name="dayscount" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" class="form-control input-sm" placeholder="">
+		   </div>
+		   <label class="col-sm-1 text-right padding cf">联运城市：</label>
+		   <div class="col-sm-1 padding">
+		     <select id="unioncity0" name="unioncity" class="form-control input-sm js-data-example-ajax" multiple="multiple" placeholder=""></select>
+		   </div>
+		   <!-- <div class="col-sm-1">
+		     <a href="javascript:;" class="glyphicon glyphicon-plus addIcon"></a>
+		   </div> -->
+		 </div><!--end 旅行社名称/人数/天数/去程航班/回程航班 text-->
+		 
+		
+		 <!--起飞城市/降落城市/联运城市 text-->
+		 <div class="form-group row addCityAirline">
+		   <label class="col-sm-1 text-right padding cf">出发城市：</label>
+		   <div class="col-sm-1 padding">
+		     <select id="leavescity0" name="leavescity" class="form-control input-sm select2" multiple="multiple" placeholder=""></select>
+		   </div>
+		   <label class="col-sm-1 text-right padding cf">抵达城市：</label>
+		   <div class="col-sm-1 padding">
+		     <select id="backscity0" name="backscity" class="form-control input-sm select2" multiple="multiple" placeholder=""></select>
+		   </div>
+		    <label class="col-sm-1 text-right padding">去程航班：</label>
+		   <div class="col-sm-1 padding">
+		     <select id="leaveairline0" name="leaveairline" class="form-control input-sm select2" multiple="multiple" placeholder=""></select>
+		   </div>
+		   <div name="teamtypehide">
+		    <label class="col-sm-1 text-right padding">出发日期：</label>
+		    <div class="col-sm-1 padding">
+		      <input id="setoffdate0" name="setoffdate" type="text" onFocus="WdatePicker({minDate:'%y-%M-%d'})" class="form-control input-sm inputdatestr" placeholder=""/>
+		    </div>
+		    <label class="col-sm-1 text-right padding">时间：</label>
+		    <div class="col-sm-1 padding">
+		      <input id="setofftime" name="setofftime" type="text" class="form-control input-sm inputtime" placeholder=""/>
+		    </div>
+		    <a href="javascript:;" name="addButton" class="glyphicon glyphicon-plus addNeeds"></a><!--添加div按钮-->
+		   </div>
+		 </div><!--end 起飞城市/降落城市/联运城市 text-->
+		
+		 <!--time 选择-->
+		 <div class="form-group row">
+		 	<label class="col-sm-1 text-right padding cf">FOC：</label>
+		   <div class="col-sm-1 padding">
+		     <select id="foc" name="foc" class="form-control select2" placeholder="">
+		     	<option value="0">否</option>
+		     	<option value="1">是</option>
+		     </select>
+		   </div>
+		   <div name="congcong">
+		    <label class="col-sm-1 text-right padding cf">从：</label>
+		    <div class="col-sm-3 padding CSdiv" name="startenddate">
+		      <input id="startdate0" name="startdate" type="text" onFocus="WdatePicker({minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'enddate0\')}'})" class="form-control input-sm timeWid inputdatestr startdatestr" placeholder="2016-11-05"> 
+		      - <input id="enddate0" name="enddate" type="text" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startdate0\')}'})" class="form-control input-sm timeWid inputdatestr enddatestr" placeholder="2016-12-01">
+		    </div>
+		   </div>
+		   <div class="col-sm-2 padding cf">
+		     <select class="form-control selectMargin cf dateAddHeng" id="weekSelect" name="weekSelect" onchange="select_change(this)">
+		       <option value="1">每周</option>
+		       <option value="2">自由</option>
+		     </select>
+		   </div>
+		   <div class="col-sm-4 padding cf checkWeek">
+		     <input type="checkbox" name="weekday" value="7"><span>周日</span>
+		     <input type="checkbox" name="weekday" value="1"><span>周一</span>
+		     <input type="checkbox" name="weekday" value="2"><span>周二</span>
+		     <input type="checkbox" name="weekday" value="3"><span>周三</span>
+		     <input type="checkbox" name="weekday" value="4"><span>周四</span>
+		     <input type="checkbox" name="weekday" value="5"><span>周五</span>
+		     <input type="checkbox" name="weekday" value="6"><span>周六</span>
+		   </div>
+		   <button type="button" id="hidebutton0" name="hidebutton" class="btn btn-primary btn-sm none hidnBtn">隐藏日历</button>
+		   <button type="button" id="showbutton0" name="showbutton" class="btn btn-primary btn-sm none showBtn">显示日历</button>
+		 </div><!--end time 选择-->
+		 
+		 <!-- select 自由 日历-->
+		 <div class="hidnCalendar none" id="minCalender0" name="minCalender">
+		 </div><!--end select 自由 日历-->
+		   <input id="calenderdate0" name="calenderdate" type="hidden">
+		</div>
+		
+		<table id="example3" class="table table-bordered table-hover	">
+		  <thead>
+		  <tr>
+		    <th>序号</th>
+		   <!--  <th>航空公司名称</th> -->
+		      <th>日期</th>
+		      <th>航班号</th>
+		      <th>航段</th>
+		      <th>时间</th>
+		      <th>人数</th>
+		      <th>FOC</th>
+		      <th>天数</th>
+		      <th>旅行社名称</th> 
+		      <th>联运要求</th>
+		    </tr>
+		    </thead>
+		    <tbody>
+		    </tbody>
+		  </table>
+		</div><!--end 计划制作-->
+		
+		<!--编辑计划-->
+		<div class="tab-pane pane-content labelMar" id="tab_3">
+		<form id="editPlanForm">
+		 <!--团状态/单号状态 下拉框 and 按钮（导出、批量生成订单、批量关闭....）-->
+		<div class="form-group row">
+		  <label class="col-sm-1 text-right padding marTop5">状态：</label>
+		  <div class="col-md-1 padding">
+		    <select class="form-control select1" id="teamtype1" name="teamtype" onchange="editPlanListSearch();">
+		      <option value="1">系列团</option>
+		      <option value="2">临时团</option>
+		      <option value="3">关闭</option>
+		    </select>
+		  </div>
+		  <div class="col-md-2 padding">
+		    <!-- <select class="form-control select1" id="idordernum" name="idordernum" onchange="editPlanListSearch();">
+		     <option value="0">无订单号</option>
+		     <option value="1">有订单号</option>
+		   </select> -->
+		 </div>
+		 <div class="col-md-8">
+		   <button type="button" class="btn btn-primary btn-sm right" onclick="batchClosePlan();">批量关闭</button>
+		   <button type="button" class="btn btn-primary btn-sm right" onclick="generateOrderNum();">批量生成订单</button>
+		   <a class="btn btn-primary btn-sm right" id="exportEditPlanId" target="hidden_frame" href="${base}/admin/customneeds/exportEditPlanExcel.html">导出excel</a>
+		   <!-- <p class="flie_A right">
+		     导出excel
+		     <input name="appendix" type="file"/>
+		   </p> -->
+		      
+		  </div>
+		</div><!--end 默认/关闭 下拉框 and 按钮（添加、导入、导出....）-->
+		
+		
+		<!--航空公司/旅行社/人数/天数 文本框-->
+		<div class="form-group row">
+		  <label class="col-sm-1 text-right padding">旅行社：</label>
+		  <div class="col-sm-1 padding">
+		    <input type="text" class="form-control input-sm" placeholder="" id="travelname1" name="travelname1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding">人数：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="peoplecount1" name="peoplecount1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding">天数：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="dayscount1" name="dayscount1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding inputdatestr">去程航班：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="leaveairline1" name="leaveairline1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding">回程航班：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="backairline1" name="backairline1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding">联运城市：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="unioncity1" name="unioncity1" onkeypress="onEnterSearch();">
+		  </div>
+		</div><!--end 航空公司/旅行社/人数/天数 文本框-->
+		
+		
+		<!--去程日期/去程航段/回程日期/回程航段 文本框-->
+		<div class="form-group row">
+		  
+		  <label class="col-sm-1 text-right padding cf">从：</label>
+		    <div class="col-sm-3 padding CSdiv">
+		      <input type="text" class="form-control input-sm timeWid inputdatestr" id="startdate1" name="startdate1" placeholder="2016-11-05" onkeypress="onEnterSearch();" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'enddate1\')}'})"> - <input type="text" id="enddate1" name="enddate1" class="form-control input-sm timeWid inputdatestr" placeholder="2016-12-01" onkeypress="onEnterSearch();" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startdate1\')}'})">
+		   </div>
+		 <label class="col-sm-1 text-right padding">起飞城市：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="leavescity1" name="leavescity1" onkeypress="onEnterSearch();">
+		 </div>
+		 <label class="col-sm-1 text-right padding">降落城市：</label>
+		 <div class="col-sm-1 padding">
+		   <input type="text" class="form-control input-sm" placeholder="" id="backscity1" name="backscity1" onkeypress="onEnterSearch();">
+		  </div>
+		  <div class="col-md-3">
+		    <button type="button" id="editPlanSearch" class="btn btn-primary btn-sm">搜索</button>
+		    <button type="button" id="resetPlanBtn" class="btn btn-primary btn-sm btn-left">恢复默认</button>
+		  </div>
+		</div><!--end 去程日期/去程航段/回程日期/回程航段 文本框-->
+		  </form>
+		   <table id="datatable2" class="table table-bordered table-hover">
+		    <thead>
+		    <tr>
+		      <th><input type="checkbox" class="checkall" /></th>
+		      <th>序号</th>
+		      <th>日期</th>
+		      <th>航班号</th>
+		      <th>航段</th>
+		      <th>时间</th>
+		      <th>人数</th>
+		      <th>FOC</th>
+		      <th>天数</th>
+		      <th>旅行社名称</th> 
+		      <th>联运要求</th>
+		      <th>操作</th>
+		    </tr>
+		    </thead>
+		    <tbody>
+		    </tbody>
+		  </table>
+		  <input id="checkedboxval" name="checkedboxval" type="hidden">
+		</div><!--end 编辑计划-->
+</body>
+</html>

@@ -1,0 +1,31 @@
+/*list*/
+.eti_a{cursor: pointer;}
+/*add*/
+.modal-header {border-bottom: 0px;}
+#addHtml{min-width: 150px; overflow-x:hidden;}
+.nav .active a{color: #3b8cbc !important;}
+#completeFileName div .delete{background-color: #e0e0e0;border: 0;color: #717171;font-size: 12px;padding: 0px 22px;border-radius: 3px;}
+.modal-body{position: relative;height:478px;overflow-y: auto;width: 100%;}
+/*update*/
+.form-control-feedback{position: absolute;top: -2px;right: -15px;}
+#paywayId {width: 546px;}
+.paytext {width: 546px;}
+.select2-container{width: 79.5% !important;}
+.row {margin-right: 0px;margin-left: 0px;}
+.address {margin-top: -15px;}
+.addCustomer li a {color: #b9b9b9 !important;}
+.fax {top: -15px;}
+.sitefax {margin-top: 15px;}
+#completeFileName div span {display: inline-block;}
+#customerUpdateForm .modal-header .nav li a{color: #b3c0cb !important;}
+#customerUpdateForm .modal-header .nav .active a{color: #3b8cbc !important;}
+.box-header{padding:0;}
+.box-body{padding: 0;}
+.content {padding-left: 0px;padding-right: 0px;}
+table.dataTable thead .sorting_asc:after {display: none;}
+.discountText{width:90%;display: inline-block;}
+.taxText{width:78%;}
+.help-block{width: 100px;}
+.addAirPlan,.removeAirPlan{top: -10px;left: 5px;}
+#downloadA {width: 613px;display: inline-block;overflow-x: hidden;}
+form#customerAddForm {height: 550px;}

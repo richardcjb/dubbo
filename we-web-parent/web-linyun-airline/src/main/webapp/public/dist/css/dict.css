@@ -1,0 +1,24 @@
+/*list*/
+#datatableType tbody td span{width:260px;display:block;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin: 0 auto;}
+.tooltip-inner {max-width: 200px;padding: 3px 8px;color: #4e4e4e;text-align:left;background-color: #e6e5e5;border-radius: 4px;border: solid 1px #bdbdbd;}
+.tooltip.right .tooltip-arrow {top: 50%;left: 0;margin-top: -5px;border-width: 5px 5px 5px 0;border-right-color: #c5c5c5;}
+.a_p{margin:0;}
+.btn_mini{margin:0 5px;}
+#datatableInfo tbody td span{width:260px;display:block;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin: 0 auto;}
+#datatableInfo{width:100px;}
+.layui-layer-btn0 {border-color: rgba(170, 170, 171, 0.35) !important;background-color: rgba(185, 185, 185, 0.17) !important;color: #9a9a9a !important;}
+.layui-layer-btn a{border: 1px solid #394dad;background-color: #367fa9;color: #fff;}
+/*add*/
+.textareaHei{height: 105px !important;}
+.form-control-feedback {position: absolute;top: -2px;right: -15px;}
+/*公司权限配置*/
+.comSty{border: solid 1px #eee;border-radius: 3px;width: 60%;background-color: rgba(251, 251, 251, 0.54);}
+.ztree li a{color: #5f5f5f;margin-left: 3px;}
+.ztree li span {margin-left: 3px;}
+.comForSty{margin-bottom:0;}
+#loginNumTable tbody tr td [data-toggle="tooltip"]{display: inline-block;width:150px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+#loginNumTable tbody tr td .tooltip .tooltip-inner{word-wrap: break-word;}
+#loginNumTable tbody tr td .tooltip .tooltip-arrow{border-left-color: #909a95}
+#comcomdatatableInfo tbody tr td [data-toggle="tooltip"]{display: inline-block;width:300px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+#thirdPayMentTable tbody tr td:nth-of-type(6) span{border: 0;width: 120px;display: block;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0 auto;}
+.tooltip-inner {word-wrap: break-word;}

@@ -1,0 +1,14 @@
+.row-top {margin-top:0px;}
+.personalTable{width: 80%;margin:40px auto;}
+.box{padding-bottom: 1px;min-height: 650px;}
+.personalBtn{width: 30%;float: right;margin-right: 8.5% !important;}
+.pwd input{width: 70%;margin: 10px auto;}
+.pwd label{display: block;width: 70%;margin: 15px 60px;}
+.pwdBody {position: relative;padding: 15px;height: 239px;overflow-y: auto;}
+.row {margin:0px;}
+.editInfo tbody tr td label{text-align: right;width:130px;margin-top: 20px;}
+.editInfo tbody tr td input{margin-top: 15px;}
+.editInfo tbody tr td select{margin-top: 15px;}
+.box-header {top: 20px;}
+#email,#qq,#landline {position: relative;top: 8px;}
+.form-control-feedback {position: absolute;top: 7px !important;right: -25px;}

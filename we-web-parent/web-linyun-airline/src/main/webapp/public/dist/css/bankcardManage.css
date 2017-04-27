@@ -1,0 +1,14 @@
+.backcard .form-control{padding-right: 0;}
+.box-header {padding: 10px 0 0 0px;}
+.textareaHeight{height: 107px !important;resize:none;}
+table#bankCardTable {margin-top: 0px !important;}
+table.dataTable thead .sorting_asc:after {display: none;}
+table.dataTable thead > tr > th {padding-right: 12px;}
+.form-control-feedback {position: absolute;top: 0px;right: -20px;}
+button#addBackCard {position: relative;right: 10px;}
+small.help-block {width: 200px;}
+.select2-container--default .select2-selection--multiple{border: 1px solid #d2d6de !important;}
+.select2-container--default.select2-container--focus .select2-selection--multiple {border: solid #d2d6de 1px !important;}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {background-color: rgba(228, 228, 228, 0) !important;border: 1px solid rgba(170, 170, 170, 0) !important;padding:0px !important;color: #4e4d4d !important;}
+span.select2-selection__choice__remove{display: none !important;}
+#bankCardTable tbody tr td span{width:100px;display: block;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0 auto;}

@@ -1,0 +1,19 @@
+/*------------------------员工管理-----------------------------*/
+.marginBott{margin-bottom: 10px;}
+.selePadd5{padding-top: 5px;}
+/*------------------------员工管理 弹框-----------------------------*/
+h4{font-size: 16px !important;}
+.margi-left{margin-left: -50px;}
+.beas-widt{width:95%;display: inline-block;}
+.prompt{display: inline-block;color: red;}
+.inpImportant,.inpImpWid,.inputWidth{display: inline-block;}
+.inpImportant{width: 96%;}
+.inpImpWid {width: 98.5%;}
+.inputWidth{width: 95.5%;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {color: #3b8cbc !important;}
+.nav-tabs>li>a {color: #afafaf !important;}
+.select2-container {width: 98.5% !important;}
+.form-control-feedback{left: 220px;}
+.iconCla .form-control-feedback{left:605px;}
+.modal-header {margin-bottom: -15px;}
+.modal-body {position: relative;padding: 30px 15px;height: 340px;overflow-y: auto;margin-top: 0;}

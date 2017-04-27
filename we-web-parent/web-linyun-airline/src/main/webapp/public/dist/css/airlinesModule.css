@@ -1,0 +1,52 @@
+#isclose,#airline,#travel,#totalcount,#totalday,#leavedate,#leavecity,#backdate,#backcity{padding-left:3px;padding-right:3px;}
+.kalendae{overflow: hidden;24 46 20 20}
+.k-btn-previous-year,.k-btn-next-year{display: none;}
+.k-first-month{margin-left: -270px;}
+.k-first-month .k-title{overflow:inherit;}
+.kalendae .k-title, .kalendae .k-header, .kalendae .k-days {overflow: visible;}
+.kalendae .k-btn-previous-month{margin-left: -100px; margin-top: -2px;border: solid 1px #DEDEDE;height: 24px;width: 24px;border-radius: 3px;}
+div[data-cal-index="2"]{margin-left:15px;}
+div[data-cal-index="2"] .k-title{width: 120px;margin: 0 auto;}
+.kalendae .k-btn-next-month{right: 750px;top:-10px;border: solid 1px #DEDEDE;height: 24px;width: 24px;border-radius: 3px;}
+.celenderBtn{padding:2px 6px;float: right;margin-left: -38px;margin-top: 190px;}
+.hidnBtn,.showBtn{padding: 3px 10px;margin: 3px 0px 0px 5px;}
+.removeBtn{margin-right:140px;}
+.select2-container .select2-search--inline {float: none;}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {background-color: #3c8dbc;color: white;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.select2-results__option {padding: 6px;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.dataTable tbody td span {max-width:200px;display: block;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.form-control-feedback {position: absolute;top: -2px;right: -25px;}
+.tooltip-inner{background-color: #ddd;border: solid 1px rgba(154, 154, 154, 0.57);}
+.tooltip.right .tooltip-arrow {border-right-color: #a5a5a5;}
+.checkWeek input {margin-left: 5px;}
+.timeWid {width: 47.6%;}
+.dropdown-menu>li>a {padding: 3px 31px;}
+#example3 tbody tr td ul{margin-bottom: 0;padding-left: 0px;}
+#example3>tbody>tr>td {padding: 3px 0px;}
+#example3 tbody tr td ul li:first-child {border-bottom: solid 1px #eee;}
+#example3 tbody tr .sorting_1{line-height: 40px !important;}
+#example3 tbody tr td:nth-child(6){line-height:40px;}
+#example3 tbody tr td:nth-child(7){line-height:40px;}
+#example3 tbody tr td:nth-child(8){line-height:40px;}
+#example3 tbody tr td:nth-child(9){line-height:40px;}
+#example3 tbody tr td:nth-child(10){line-height:40px;}
+#example3 thead tr th{padding-right: 0px;}
+.kalendae .k-days span.k-selected.k-active {background: #ce728f;}
+#datatable2 tbody tr td ul{margin-bottom: 0;padding-left: 0px;}
+#datatable2>tbody>tr>td {padding:0px 0px;}
+#datatable2 tbody tr td ul li{border-bottom: solid 1px #eee;}
+#datatable2 tbody tr td ul li:last-child{border-bottom: solid 0px #eee;}
+#datatable2 tbody tr .sorting_1 {padding-top: 14px;}
+#datatable2 tbody tr td:nth-child(2){line-height:40px;}
+#datatable2 tbody tr td:nth-child(7){line-height:40px;}
+#datatable2 tbody tr td:nth-child(8){line-height:40px;}
+#datatable2 tbody tr td:nth-child(9){line-height:40px;}
+#datatable2 tbody tr td:nth-child(10){line-height:40px;}
+#datatable2 tbody tr td:nth-child(11){line-height:40px;}
+#datatable2 tbody tr td:nth-child(12){line-height:40px;}
+#datatable2 thead tr th{padding-right:0px;}
+#datatable2 thead .sorting_asc:after {display:none;}
+.select2-dropdown--below{width: 150px !important;}
+.sorting_1 input{display: block;margin: 30% auto;}
+.btnTop{position: relative;margin-top: -57px;}
+form#searchForm {margin-top: -15px;}

@@ -1,0 +1,119 @@
+/*------------------------桌面-----------------------------*/
+.addhtml{min-width: 150px; overflow-x: auto !important;}
+.taskDiv{margin-bottom: 20px;}
+.taskInfo{height: 134px;overflow-y:auto;  margin-left: 0px;background-color: #fff;margin-bottom: 15px;padding: 8px 8px;border-radius: 0px 3px 3px 3px; width: 100%;margin-bottom: 0;}
+.taskInfo li{line-height: 25px;font-size: 13px;}
+.marHeight{margin-top: 20px;}
+/*--------------大日历----------------*/
+.box{clear: both;}
+#calendar{width:100%; margin:20px auto 0px auto}
+.fancy{width:450px; height:auto}
+.fancy h3{height:30px; line-height:30px; border-bottom:1px solid #d3d3d3; font-size:14px}
+.fancy form{padding:10px}
+.fancy p{height:28px; line-height:28px; padding:4px; color:#999}
+.input{height:20px; line-height:20px; padding:2px; border:1px solid #d3d3d3; width:100px}
+.btn{-webkit-border-radius: 3px;-moz-border-radius:3px;padding:5px 12px; cursor:pointer}
+.btn_ok{background: #360;border: 1px solid #390;color:#fff}
+.btn_cancel{background:#f0f0f0;border: 1px solid #d3d3d3; color:#666 }
+.btn_del{background:#f90;border: 1px solid #f80; color:#fff }
+.sub_btn{height:32px; line-height:32px; padding-top:6px; border-top:1px solid #f0f0f0; text-align:right; position:relative}
+.sub_btn .del{position:absolute; left:2px}
+.fc-event {border: 1px solid #d8d8d8;background-color: rgb(247, 247, 247);color: #4e4e4e;font-size: .85em;cursor: default;text-shadow: 0 0 0 #eee;}
+.evevtBtttonAdd{width: 138px;}
+span.fc-button {border-radius: 4px;margin-left: 10px;}
+.fc-header-title h2 {font-size: 25px;}
+
+
+
+/*--------------提醒 弹框----------------*/
+.EventBody{width: 400px;height: 200px;}
+.eventText{margin-top: 10px;padding-bottom: 10px;border: 0;border-bottom: solid 1px #eee;font-size: 15px;margin-bottom: 10px;border-radius: 0px;width: 102%;margin-left: 0px;}
+.evevtTool{height: 31px;padding-left: 20px;margin-top: 15px;}
+.evevtTool input{display: inline-block;width: 80%;}
+.evevtBttton{width:203px;margin: 15px 61px;}
+.evevtBttton .btn{height: 30px;padding: 0px 15px;font-size: 13px;line-height: 30px;}
+.bv-form .help-block {margin: -10px 0 -10px 10px !important;color: #bf224c;}
+/*--------------小日历----------------*/
+.minCelender{padding-left: 0;}
+#box-min{overflow:hidden;padding-left: 0.5%;}
+#box-min p{width: 80px;margin: 5px 0 0px 70%; position: relative;left:-3px;top: 18px;}
+#minCId{min-width: 247px;}
+#minCalen{border: solid 1px #fff;padding-left: 0.5%;margin: -285px 0px 0px 0px;padding: 0;position: static;min-width: 234px;}
+#minCalen div[data-cal-index="2"]{margin-top:70px;}
+#minCalen div[data-cal-index="2"] .k-title{width: 40%;height: 20px;float: right;right: 30%;top: -5px;}
+#minCalen div[data-cal-index="2"] .k-title .k-caption{display: inline-block;position: relative;left: 12px;top: -5px;}
+#minCalen div[data-cal-index="0"] .k-title .k-caption{margin-bottom: 10px;}
+#minCalen div[data-cal-index="1"] .k-title .k-caption{display:none;}
+#minCalen .k-first-month{margin-top: 0px;margin-left: 3px;}
+#minCalen .k-middle-month{margin-left:0px;margin-top: 0;}
+#minCalen .k-last-month{margin-left:0px;margin-top: 0;}
+#minCalen .k-last-month .k-title{overflow: inherit;}
+#minCalen .k-last-month .k-title .k-btn-next-month{display: inline-block;position: relative;top: -505px;left:58px;border: solid 1px #c5c5c5;height: 24px;width: 25px;background-color: #f9f9f9;border-radius: 3px;}
+#minCalen .k-title{overflow: visible;width: 100%;padding-right:23px;}
+#minCalen .k-days span{height: 30px;width:13.8%;}
+/* @media screen and (max-width: 1349px) and (min-width: 1188px){
+	#minCalen div[data-cal-index="0"] .k-title .k-btn-next-month{left: -70px;}
+	#minCalen div[data-cal-index="3"] .k-title .k-btn-previous-month{left: -50px;}
+}
+@media screen and (max-width: 1187px) and (min-width: 1180px){
+	#minCalen div[data-cal-index="0"] .k-title .k-btn-next-month{left: -70px;}
+	#minCalen div[data-cal-index="3"] .k-title .k-btn-previous-month{left: -50px;}
+}
+@media screen and (max-width: 1320px) and (min-width: 1225px){
+	#minCalen div[data-cal-index="0"] .k-btn-next-month{left:55px !important;}
+	#minCalen div[data-cal-index="3"] .k-title .k-btn-previous-month{left: -35px;top: 295px;}
+}
+@media screen and (max-width: 1399px) and (min-width: 1321px){
+	#minCalen div[data-cal-index="0"] .k-title .k-btn-previous-month{left: -55px;}
+}
+@media screen and (max-width: 1602px) and (min-width: 1500px){
+	#minCalen div[data-cal-index="0"] .k-title .k-btn-next-month{top:-497px;}
+}
+@media screen and (max-width: 1802px) and (min-width: 1700px){
+	#minCalen div[data-cal-index="0"] .k-title .k-btn-next-month{top: -484px;}
+} */
+.checkShow{width: 15px;height: 15px;position: relative;top: 3px;margin-right: 4px;}
+.dot{background-color:#e04174;width: 5px;height: 5px;display: block;position: relative;top: 3px;margin: 0 auto;border-radius:10px;}
+/*#minCalen .k-title .k-btn-previous-year{position: absolute;left: -0px;top: 285px;}*/
+#minCalen .k-title .k-btn-previous-month{    display: inline-block; position: relative;top: -505px;left: -61px;border: solid 1px #c5c5c5;height: 24px;width: 25px;background-color: #f9f9f9;border-radius: 3px;}
+.kalendae .k-calendar{width:100%;padding-left: 1%;}
+.k-header{width:100% !important;}
+.kalendae .k-header span{width:13.8%;}
+.k-days{width:100% !important;}
+.back{background-color:#eee !important;}
+.kalendae .k-header span, .kalendae .k-days span{display:inline-table;}
+span[data-date*="-01-01"],span[data-date*="-02-14"],span[data-date*="-03-12"],span[data-date*="-03-08"],span[data-date*="-04-01"],span[data-date*="-05-01"],span[data-date*="-06-01"],span[data-date*="-09-10"],span[data-date*="-10-01"],span[data-date*="-12-25"]{color: rgb(224, 65, 116) !important;}
+.month-i1,.month-i2,.month-i3{font-family: Arial;font-style: normal;display: inherit;width: 100%;height: 190px;line-height: 190px;text-align: center;font-size: 113px;color: rgba(0, 0, 0, 0.1);}
+.month-i1{position: absolute;top: 60px;}
+.month-i2{position: absolute;top: 307px;}
+.month-i3{position: absolute;top: 559px;}
+.month-i4{font-family: Arial;font-style: normal;position: absolute;display: inline;width: 100%;height: 100%;color: rgba(0, 0, 0, 0.11);text-align: center;line-height: 800px;font-size: 290px;}
+.kalendae .k-title, .kalendae .k-header, .kalendae .k-days {position: relative;}
+.kalendae .k-days span.k-in-month.k-active {background-color: rgba(115, 114, 114, 0.05);}
+.k-last-month .k-title .k-btn-previous-year{display: inline-block;position: relative;top: -505px;left: -67px;border: solid 1px #c5c5c5;height: 24px;width: 25px;background-color: #f9f9f9;border-radius: 3px;}
+.k-last-month .k-title .k-btn-previous-year:hover{color:#3c8dbc;}
+.k-last-month .k-title .k-btn-next-year{position: relative;left: 113px;top: -505px;border: solid 1px #c5c5c5;height: 24px;width: 25px;background-color: #f9f9f9;border-radius: 3px;display: inline-block;}
+.k-last-month .k-title .k-btn-next-year:hover{color:#3c8dbc;}
+/*---------------自定义界面----------------*/
+.customInterface{background-color: #367fa9;margin-top: 3px;color: #fff;padding: 7px;float: right;border-radius: 4px 4px 0 0;}
+.customInterface:hover{color: #fff !important;background-color:#3c8dbc;text-decoration:none;}
+.customInterface:active, .customInterface:focus{color: #fff !important;}
+.layer-content{height: 125px;}
+.layer-header{border-bottom: #eee solid 1px;padding-top: 10px;height: 52px;}
+.layer-header h4{padding-left:20px;margin-top: 10px; font-size: 15px !important;}
+.layer-check{width: 80%;margin: 0 auto;height: 30px;}
+.layer-check p{width: 30%;display: inline-block;}
+.layer-check p input{width: 15px;height: 15px;position: relative;top: 3px;margin-right: 4px;}
+.taskInfo li a span{display: inline-block; text-align: center;width: 50px;}
+/*-----------------------任务-------------------------*/
+.tab-pane{margin: 0;}
+.nav-tabs-custom > .nav-tabs {background-color:#ecf0f5;height: 35px;}
+.custome > li > a {padding: 5px 15px;}
+.nav-tabs-custom > .nav-tabs > li {border: solid 1px #f3f3f3;background-color: #fff;margin-right:-2px;}
+.nav-tabs-custom > .nav-tabs > li.active {border-top: solid 2px #3c8dbc;}
+.nav-tabs-custom > .tab-content{padding: 0;}
+.nav-tabs-custom > .nav-tabs > li > a {color: #969696;border-radius: 0;}
+#minCalen div[data-cal-index="2"] .k-title .k-btn-previous-month{display: none !important;}
+#minCalen div[data-cal-index="1"] .k-title .k-btn-previous-month{display: none !important;}
+#minCalen div[data-cal-index="1"] .k-title .k-caption {float: right;}
+#minCalen div[data-cal-index="0"] .k-title .k-caption {display:none;}

@@ -1,0 +1,28 @@
+/*--------------邮件抓取----------------*/
+.rebatesBtn{width: 75%;height: 30px;float: right;position: relative;right: -10px;margin-top: -47px;}
+.rebatesBtn .btn{padding: 5px 10px;}
+#rebatesEamilTable{position: relative;top: -30px;}
+table.dataTable thead .sorting_desc:after{content: " ";}
+table.dataTable thead .sorting_asc:after{content: "";}
+table.dataTable thead .sorting:after{content: "";}
+.text-left{text-align:left !important;}
+.checkTh input{position: relative;left: 11px;}
+.breadcrumb {margin-bottom: 30px;clear: both;}
+#rebatesEamilTable tbody tr .sorting_1 input {margin:3px auto;}
+/* #rebatesEamilTable thead > tr > th {padding-right: 8px;} */
+div#uploadFile{width: 46px !important;float: right;margin-right: 10px;border-radius: 3px;}
+object#SWFUpload_0 {width: 46px;border-radius: 3px;}
+div#uploadFile-button {width: 46px !important;}
+/*报表*/
+#rebatesReportTable tbody td span{width:52px;display: block;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0 auto;}
+.tooltip.left .tooltip-arrow {top: 50%;right: 0;margin-top: -5px;border-width: 5px 0 5px 5px;border-left-color: #AFAFAF;}
+#rebatesReportTable tbody td{padding: 8px 2px;}
+#rebatesReportTable thead th{padding: 8px 2px;}
+
+#rebatesReportTable tbody td:nth-child(1){width:50px !important;}
+#rebatesReportTable thead th:nth-child(1){width:50px;overflow: hidden;}
+#rebatesReportTable tbody td:nth-child(3) span{width:65px;}
+
+
+
+

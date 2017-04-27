@@ -24,4 +24,5 @@ public class CompanyFuctionForm {
 	/**职位关联的功能id列表,数字和逗号组成,可以为空*/
 	@Pattern(regexp = "(\\d+,?)*")
 	private String functionIds;
+
 }

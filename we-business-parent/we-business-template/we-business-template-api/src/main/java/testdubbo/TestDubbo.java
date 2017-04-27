@@ -18,4 +18,8 @@ public class TestDubbo {
 
 	@Inject
 	protected Dao nutDao;
+
+	public static void main(String[] args) {
+
+	}
 }

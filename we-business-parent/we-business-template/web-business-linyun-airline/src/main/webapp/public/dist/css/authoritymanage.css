@@ -1,0 +1,14 @@
+/*------------------------权限管理-----------------------------*/
+html, body {min-height: 100px;}
+.divContent{min-width: 630px;}
+.addDepartment{width:90%;margin: 5px auto;}
+ul li{list-style: none;display:inline-block;}
+ul .li-input{width:55%;}
+.headerClass{border-bottom: 1px solid #e5e5e5;width: 100%;padding: 15px 10px 10px 19px;}
+.inputText{display: inline-block;width: 95%;}
+#addJob,#settingsPermis{margin-left: 0;}
+.marHei{margin-top: 10px;}
+.ztree{width: 561px;min-height: 200px;margin-left: 17.3% !important;border: solid 1px #eee;border-radius: 3px;}
+.ztree ul li{white-space: initial;}
+.ztree ul li ul li{display: block;}
+#deptDatatable{width:100%;}

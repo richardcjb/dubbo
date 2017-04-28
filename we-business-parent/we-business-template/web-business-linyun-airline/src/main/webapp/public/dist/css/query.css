@@ -1,0 +1,188 @@
+.content{min-width: 950px;min-height:700px;overflow: hidden;padding: 1px 15px;}
+.box{min-height: 500px;}
+.infoTop{margin-top:15px;border-bottom:solid 1px #f1f1f1;}
+.infoTop p{background-color: #fff;margin: 0px;border: solid 1px #e0e0e0;display:inline-block;width: 85px;text-align: center;line-height: 30px;border-top: solid 2px #3c8dbc;border-radius: 3px 3px 0 0;border-bottom: 0;}
+.infoTopContent{width:315px;height: 30px;float: right;}
+.infoTopContent input{display: inline-block;}
+.infoTopContent .conCheckInput{width: 15px;height: 15px;position: relative;top: 3px;right: 3px;}
+.infoTopContent .conSelect{width: 70px; height: 28px;display: inline-block;margin:0 15px; }
+.infoTopContent .infoTopContent input{display: inline-block;}
+.infoTopContent .conTimeInput{width: 125px;height: 28px;position: relative;top: -2px;}
+.infoTopContent .btn{margin-left: 12px;padding: 4px 15px;position: relative;top: -3px;}
+.infofooter{overflow: hidden;border: solid 1px #e0e0e0;border-top: 0;background-color: #fff;border-radius: 0 4px 4px 4px;}
+.infofooter table tr td label{width: 78px;text-align: right;position: relative;top: 3px;}
+.DemandDiv:nth-of-type(1){margin-top:10px;}
+/* .infofooter table tbody tr td .form-control{width: 115px;}*/
+.cloTable tr td:nth-of-type(3) label{width: 70px;}
+.cloTable tr td:nth-of-type(5) label{width: 70px;}
+.cloTable tr td:nth-of-type(7) label{width: 70px;}
+.cloTable tr td:nth-of-type(9) label{width: 60px;}
+.cloTable tr td:nth-of-type(10){width: 8%;}
+.cloTable tr:nth-of-type(1) td:nth-of-type(2) span.select2-container{/* width:185px !important; */}
+.cloTable tr:nth-of-type(1) td:nth-of-type(3) label{position: relative;left:5px;}
+.cloTable tr:nth-of-type(1) td:nth-of-type(4) span.select2-container{width:225px !important;}
+.cloTable tr:nth-of-type(1) td:nth-of-type(7) label{width: 60px;}
+.cloTable tr td:nth-of-type(11) label{width: 60px;}
+.select2-dropdown--below {width: 185px !important;}
+.addressInput{width: 231px !important;}
+.infofooter  table tr td .btn{margin-left: 17px;padding: 4px 15px;}
+.infofooter  table tr td .UnderIcon{font-size: 20px;cursor: pointer;color: #5d6a7b;position: relative;top: 3px;left: 15px;}
+.infofooter  table tr td .UnderIcon:hover{color: #4b5563;}
+.hideTable{margin-top:5px;margin-bottom: 15px;}
+.hideTable tbody tr td:nth-of-type(2){width:150px;}
+select#teamAirLevel {width: 208px !important;}
+.hkgsLabel{width: 100px !important;}
+.txtSelect .select2{width: 208px !important;}
+.preTxt{display: block;padding: 0;margin: 15px 0 10px;font-size: 13px;color: #585858;word-break: break-all;word-wrap: break-word;border: 0;background-color: #fff;}
+.listInfo{margin-top: 10px;}
+.tab-pane{margin: 0;}
+.nav-tabs-custom > .tab-content {padding: 10px 0;}
+.nav-tabs-custom > .nav-tabs > li {border-top: 2px solid transparent;}
+.query-style > li > a {padding:5px 27px;}
+.tab-pane table tr td label {width: 78px;text-align: right;}
+.scatteredTable3 tr td:nth-of-type(5) label {width:102px;}
+.scatteredTable3 tr td:nth-of-type(7) label {width:80px;}
+.scatteredTable3 tr td:nth-of-type(8) .select2 {width:115px !important;}
+.scatteredTable1{color: #5f5f5f;}
+.scatteredTable1 tr td{padding: 4px 0;}
+.scatteredTable1 tr td span{font-size: 13px;}
+.scatteredTable1 tr td span {font-size: 13px;display: inline-block;position: relative;top: -2px;left: 3px;width: 70px;}
+.scatteredTable1 tr td input[type="radio"]{width: 14px;height: 14px; margin:2px 0 0;}
+.scatteredTable2{margin-top: 5px;}
+.scatteredTable2 tr{height: 45px;}
+.scatteredTable2 tr td .form-control {width: 115px;color: #555;font-weight: 500;}
+.scatteredTable2 tr td label{position: relative;top: 2px;}
+.scatteredTable2 tr .untilTd i{width:20px;position: relative;top:-1px;left: 12px;color: #777;font-size: 12px;}
+.scatteredTable2 tr .untilTd1{width: 45px;}
+.scatteredTable2 tr td .addMore{border: solid 1px #3c8dbc;border-radius: 11px;padding: 4px;color: #3c8dbc;position: relative; top: -1px;left: 15px;cursor: pointer;}
+.scatteredTable2 tr td .removeMore{border: solid 1px #3c8dbc;border-radius: 11px;padding: 4px;color: #3c8dbc;position: relative; top: -1px;left: 15px;cursor: pointer;}
+.hideTr td{padding-top: 10px;}
+.scatteredTable3{margin-top:5px;}
+.scatteredTable3 tr td label{position: relative;top: 2px;}
+.scatteredTable3 tr td input{width: 115px;}
+.paddTd{padding-left:1px;}
+.scatteredTable3 tr td select{width: 68px;padding-left: 3px;padding-right: 3px;}
+.scatteredTable3 tr td .selectWid{width:210px;}
+.scatteredTable3 tr td .btn{margin-left: 14px;padding: 4px 15px;}
+.TableListInfo{border: solid 1px #eee;min-height:200px;margin: 15px;max-width:100%;border-radius: 3px;background-color: rgba(251, 251, 251, 0.58);}
+.TableListInfo h5{width: 620px;text-align: center;color: #7d7d7d;font-weight: 600; }
+.paragraphBtn,.paragraphTime,.paragraphListInfo{padding: 0 0 0 10px;}
+.paragraphBtn li{text-align: center;display: inline-block;margin: 0px;padding: 4px 17px;font-size: 13px;cursor: pointer;color: #b3b3b3;border: solid 1px #dcdcdc;border-radius: 2px;}
+.paragraphBtn li p{padding: 0px;margin: 0px;}
+.btnStyle{background-color: #f1f1f1 !important;color: #8a8a8a !important;border: solid 1px #cccccc !important;}
+.moneyP p{color: #3c8dbc;font-size: 15px;}
+.paragraphTime li{display: inline-block;border: solid 1px #b7b7b7;background-color: #eee;padding: 3px 28px;margin-left: -4px;font-size: 13px;color: #5a5a5a;}
+.margiLeft{margin-left: 0 !important;}
+.paragraphListInfo li{border: solid 1px #eee;list-style: none;width:680px;min-height: 60px;border-radius: 3px;margin-bottom: 5px;background-color:rgba(239, 239, 239, 0.34);}
+.imgIconDiv,.distanceTimeDiv,.moneyDiv{float: left;}
+.xuanzeBtn button{margin-top: 16px;padding: 3px 10px;margin-left: 12px !important;}
+.xuanzeBtn ul{width: 100px;margin: 1px 0 0 12px;}
+.xuanzeBtn ul li{width: 100%;min-height: 25px;border: 0;background-color: #fff;margin-bottom:0px;}
+.xuanzeBtn ul li a{padding: 3px 10px;}
+.paragraphListInfo li div img{display: inline-block;}
+.imgIconDiv{width:145px;}
+.imgIconDiv img{width: 40px;height: 40px;position: relative; top: 9px;left: 10px;border: solid 1px rgba(238, 238, 238, 0.52);border-radius: 3px;}
+.imgIconDiv p{display: inline-block;position: relative;top: 10px;left: 10px;color: #797979;font-size: 13px;}
+.distanceTimeDiv{width: 360px;}
+.distanceTimeDiv span b{text-align: center;display: block;margin-top: 8px;font-size: 18px;font-weight: 500;}
+.distanceTimeDiv span p{text-align: center;margin:0;font-size: 12px;color: #b1b1b1;}
+.moneyDiv{width:95px;text-align: center;line-height: 60px;color: #3c8dbc;font-size: 17px;}
+.moneyDiv i{font-size: 15px;}
+.chufaCS,.shiDuan,.daodaCS{float: left;height: 58px;}
+.chufaCS,.daodaCS{ width: 80px;}
+.shiDuan{height: 32px;width: 195px;border-bottom: 2px solid rgba(51, 51, 51, 0.72);text-align: center;line-height: 45px;color: #b1b1b1;}
+.selectWid1{width: 135px !important;}
+.tableInfoDiv{padding: 15px 10px 0 10px;}
+.showDis{display:table-cell;}
+.timSelect{display: inline-block;width:90px;height: 28px !important;}
+.dropdown-toggle {display: block;margin-top: 10px;}
+ .select2-container {width: 150px !important;}
+.select2-container--default.select2-container--disabled .select2-selection--multiple{width: 115px;}
+td[colspan="3"] .select2 .selection .select2-selection{width:100%;}
+td[colspan="3"] .select2 .selection .select2-selection ul .select2-search--inline{display: none;}
+#datatable2 tbody tr td ul{margin-bottom: 0;padding-left: 0px;}
+#datatable2>tbody>tr>td {padding: 3px 0px;}
+#datatable2 tbody tr td ul li {border-bottom: solid 1px #eee;}
+#datatable2 tbody tr td ul li:last-child {border-bottom: solid 0px #eee;}
+#datatable2 tbody tr .sorting_1{padding-top: 14px !important;}
+#datatable2 tbody tr td:nth-child(1){line-height:40px;}
+#datatable2 tbody tr td:nth-child(2){line-height:40px;}
+#datatable2 tbody tr td:nth-child(7){line-height:40px;}
+#datatable2 tbody tr td:nth-child(8){line-height:40px;}
+#datatable2 tbody tr td:nth-child(9){line-height:40px;}
+#datatable2 tbody tr td:nth-child(10){line-height:40px;}
+#datatable2 thead tr th{padding-right: 0px;}
+#datatable2 thead .sorting_asc:after {display: none;}
+.select2-container .select2-search--inline {float: none;}
+.content-wrapper, .right-side {min-height: 793px;}
+.p {float: left;width: 60px;text-align: center;position: relative;top: 20px;}
+.user-menu a{margin-top: 0;}
+.checkClass {height: 15px;width: 15px;}
+.checkSpan{top:-3px !important;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {position: relative;}
+.sorting_1 input { display: block; margin: 30% auto;}
+.KHinfo td{padding-top: 12px;}
+.paragraphNumber {padding-top: 10px;}
+/*---------客户信息---------*/
+/*.DemandDiv{background-color: #f5f5f5;box-shadow: 0px 1px 5px #bebebe;margin-bottom:15px;}*/
+.titleNum{float: left;border: rgb(45, 110, 149) solid 1px;text-align: center !important;margin-left: 10px;border-radius: 3px;font-size: 15px !important;color: #2d6e95;margin-top: 5px;width: 24px;margin-bottom: 12px;}
+.addDemand,.removeDemand{padding: 5px 11px;position: relative;left: 88%;margin-top: 5px;}
+.cloTable{margin-top:5px;}
+.cloTable tr {height: 40px;}
+.addIcon{top: 0px;margin-right: 20px;margin-left: 15px;}
+.noteText{width: 100% !important;}
+.removIcon{color: #3c8dbc;margin-right: 20px;margin-top: 0;cursor: pointer;}
+.removIcon:hover{color: rgba(60, 141, 188, 0.75);}
+#infofooter{border-bottom: 0 !important;}
+/*---------end 客户信息---------*/
+.sabre{padding: 3px 15px;}
+.sabreTextatea{max-width:730px;height: 200px !important;display: inline-block;position: relative;left: 10px;}
+.parsingBtn{display: inline-block;position: relative;top: -12px;left: 15px;}
+table.dataTable thead .sorting_asc:after {display: none;}
+table.dataTable thead .sorting:after {display: none;}
+table.dataTable thead .sorting_desc:after {display: none;}
+table.dataTable thead > tr > th {padding-right:0px;}
+.parsingBtn {margin-left: 10px;font-size: 12px;border-radius: 3px;}
+#customerCheckForm .hideTable tbody tr td:nth-child(4) .select2-container{width: 100% !important;}
+#customerCheckForm .hideTable tbody .KHinfo td .select2-container {width:100% !important;}
+#custInfoName {position: relative;top: 5px;}
+#cOutDate {padding-left: 3px;padding-right: 3px;}
+[name="cAirArrivalDate"]{padding-left: 3px;padding-right: 3px;}
+/*select2 内容style 隐藏*/
+.select2-container--default .select2-selection--multiple .select2-selection__choice {background-color:rgba(255, 255, 255, 0);border-color:rgba(255, 255, 255, 0);padding: 2px 0px;color: #555;font-size: 11px;}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {margin-right: 0px;display: none;color: rgba(255, 255, 255, 0.7);}
+.select2-container--default .select2-search--inline .select2-search__field {margin-left: 0px;}
+/*end select2 内容style 隐藏*/
+/*----出发城市/到达城市 style-----*/
+.setMore td:nth-child(2){width: 211.5px;}
+.setMore td:nth-child(2) .select2-container{width:208px !important;}
+.setMore td:nth-child(5){width: 211.5px;}
+.setMore td:nth-child(5) .select2-container{width:208px !important;}
+.setTeamMore td:nth-child(2){width: 210px;}
+.setTeamMore td:nth-child(2) .select2-container{width:208px !important;}
+.setTeamMore td:nth-child(5){width: 210px;}
+.setTeamMore td:nth-child(5) .select2-container{width:208px !important;}
+/*----end 出发城市/到达城市 style-----*/
+.addCustomerAirline td:nth-child(12) input{padding-left:3px;padding-right: 3px;}
+#tab_4 #cRemark{max-width: 730px;height: 200px !important;display: inline-block;position: relative;left: 10px;}
+/* .cAirlineNumTd .select2{width: 100% !important;} */
+.xuqiuTable{ width: 100%;}
+.xuqiuTable tbody tr td:nth-child(odd){float: right; position: relative;top: 8px;}
+.xuqiuTable tbody tr td:nth-child(6){width: 9% !important;}
+.xuqiuTable tbody tr:nth-child(2) td:nth-child(8){width:85px !important;}
+.xuqiuTable tbody tr:nth-child(2) td:nth-child(6){width:80px;}
+.xuqiuTable tr:nth-of-type(1) td:nth-of-type(4) span.select2-container {width:150px !important;}
+.xuqiuTable tbody tr td:nth-child(8){width:5%;}
+.xuqiuTable tbody tr:nth-child(2) td:nth-child(10){width:85px;}
+.xuqiuTable tr:nth-of-type(1) td:nth-of-type(2) span.select2-container {width:150px !important;}
+.xuqiuTable tbody tr:nth-child(2) td:nth-child(2){width:150px;}
+.xuqiuTable tbody tr:nth-child(2) td:nth-child(3){width:54px;}
+.xuqiuTable tr:nth-of-type(1) td:nth-of-type(3) label {position: relative;left:0px;}
+.remarkDiv{padding: 5px 0px;display: block;margin-bottom: 15px;}
+.remarkTable{width:100%;}
+.remarkContext{overflow: hidden;min-height: 80px;display: block;border: solid 1px #e0e0e0;border-radius: 0 0 3px 3px;border-top: 0;background-color: white;}
+.remarkTable tbody tr td:nth-child(1){width: 78px;text-align: right;}
+.remarkTable tbody tr td:nth-child(2){padding-right:5.6%;}
+.infofooter1{border-bottom: 0;border-radius: 3px 3px 0px 0px;}
+textarea#cRemark{height: 112px;resize:none}
+.select2-container--default.select2-container--disabled .select2-selection--multiple {width: 100% !important;}

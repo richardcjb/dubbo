@@ -1,0 +1,16 @@
+.suBtn {position: relative;top: -2px;left: 10px;}
+.mar{margin: 15px 0 0 15px;}
+table.dataTable thead .sorting_asc:after {display: none;}
+table.dataTable thead .sorting_desc:after {display: none;}
+table.dataTable thead .sorting:after {display: none;}
+table.dataTable thead > tr > th {padding-right: 10px;}
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-package com.xiaoka.template.admin.feedback.module;
+package com.xiaoka.template.admin.authority.feedback.module;
 
 import org.nutz.dao.pager.Pager;
 import org.nutz.ioc.loader.annotation.Inject;
@@ -15,6 +15,9 @@ import org.nutz.mvc.annotation.Param;
 import com.uxuexi.core.web.base.page.Pagination;
 import com.uxuexi.core.web.chain.support.JsonResult;
 import com.xiaoka.template.admin.authority.feedback.service.FeedbackViewService;
+import com.xiaoka.template.forms.FeedbackAddForm;
+import com.xiaoka.template.forms.FeedbackForm;
+import com.xiaoka.template.forms.FeedbackUpdateForm;
 
 @IocBean
 @At("/admin/feedback")

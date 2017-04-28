@@ -191,8 +191,12 @@
 		    <artifactId>junit</artifactId>
 		    <version>4.12</version>
 		</dependency>
-		
-		
+
+
+		<dependency>
+			<groupId>com.we</groupId>
+			<artifactId>we-core-web-www</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

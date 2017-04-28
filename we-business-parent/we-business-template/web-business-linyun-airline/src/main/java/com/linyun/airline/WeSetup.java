@@ -198,7 +198,7 @@ public class WeSetup implements Setup {
 		NutDao nutDao = ioc.get(NutDao.class, "nutDao");
 
 		//扫描指定包中的所有class，创建需要的数据库表
-		List<Class<?>> classes = Scans.me().scanPackage("com.linyun.airline");
+		List<Class<?>> classes = Scans.me().scanPackage("web-business-linyun-airline");
 		for (Class<?> clazz : classes) {
 			if (clazz.isAnnotationPresent(Table.class)) {
 				nutDao.create(clazz, false);
